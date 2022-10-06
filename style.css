@@ -1,0 +1,257 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+input{
+    outline: none;
+    caret-color: inherit;
+}
+
+input::placeholder{
+    color: inherit;
+    opacity: 1;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+body{
+    max-width: 100%;
+    font-family: "Lato";
+}
+
+
+.flexdesktop{
+    display: flex;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-image: url("img/hero.jpeg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header .profile{
+    max-width: 450px;
+    padding: 25vh 30px 10px 10%;
+}
+
+header div.profile h1{
+    font-weight: 800;
+    font-size: 3em;
+}
+
+header button{
+    border: 1.5px solid black;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header nav{
+    width: 630px;
+    margin-left: calc(100% - 630px);
+
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 1%;
+    padding: 10px 30px;
+}
+
+header nav ul li:hover{
+    color: rgb(213, 213, 213);
+}
+
+header div.profile p{
+    margin: 20px 0px;
+    line-height: 20px;
+}
+
+header button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*------------------------------------Second Section-------*/
+
+.aboutme{
+    padding: 5%;
+    margin-bottom: 10vh;
+}
+
+
+.aboutme img{
+    width: 35%;
+    height: fit-content;
+}
+
+.aboutme article{
+    padding:10px 40px 0px 40px ;
+}
+
+
+.aboutme article h2{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.aboutme article p{
+    margin-top: 20px;
+}
+
+.aboutme article p{
+    font-size: 15px;
+}
+
+/*----------------------------Third Section----------*/
+
+.gallery{
+    padding: 2% 5% 5% 5%;
+    text-align: center;
+}
+
+.gallery .flexdesktop{
+    width: fit-content;
+    margin: auto;
+}
+
+.gallery .flexdesktop img{
+    max-width: 95%;
+    padding: 10px;
+}
+
+.gallery h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.gallery p{
+    margin: 15px;
+}
+
+.gallery button{
+    padding: 15px 28px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .gallery .flexdesktop{
+        display: block;
+        width: fit-content;
+    }
+
+    .gallery .flexdesktop img{
+        display: block;
+
+    }
+
+    header{
+        background-position:4%;
+    }
+    header nav{
+        margin-left: 0%;
+        width: max-content;
+    }
+
+    header nav ul li{
+        display: block;
+        margin: 0px;
+    }
+
+    header .profile{
+        width: 85%;
+        margin-top: 10vh;
+        padding: 20px 20px;
+    }
+
+    header div.profile h1{
+        font-weight: 800;
+        font-size: 2.4em;
+    }
+
+    .aboutme img{
+        padding-top: 70px;
+        width: 30%;
+        height: 23vh;
+    }
+    .aboutme{
+        padding: 10vh 10px 10px 10px;
+    }
+
+    .aboutme p{
+        margin-top: 0px;
+    }
+
+    .aboutme article{
+        margin: 0%;
+        padding: 10px;
+    }
+}
