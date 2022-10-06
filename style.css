@@ -155,8 +155,84 @@ header button:hover{
 
 .gallery button{
     padding: 15px 28px;
+    text-align: center;
     background-color: white;
     margin-top: 15px;
+    outline: none;
+}
+
+.gallery button:hover{
+    background-color: rgba(237, 237, 237, 0.7);
+    border-color: inherit;
+}
+
+/*------------------------------------------Contactme---*/
+
+.contact{
+    width: fit-content;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 3% 10%;
+    text-align: center;
+}
+.contact h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.contact p{
+    margin:5px 3px 15px 3px ;
+}
+
+
+.contact .important{
+    text-align: left;
+}
+
+.contact .important input{
+    width: 400px;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.contact .important textarea{
+    height: 170px;
+    width: 400px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.contact button{
+    padding: 10px 26px;
+    text-align: center;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    outline: none;
+}
+
+.contact button:hover{
+    background-color: rgba(237, 237, 237, 0.7);
+    border-color: inherit;
+}
+
+
+
+
+
+/*-------------------------------Footer----------*/
+footer{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    font-size: 0.77em;
 }
 
 
@@ -192,17 +268,39 @@ header button:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:700px) {
+    .hiddenmobile{
+        display: none;
+    }
+    .contact label{
+        display: block;
+        text-align: left;
+    }
+    .contact .important input{
+        margin-left: 0%;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+
+    .contact .important textarea{
+        margin-left: 0%;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .contact .important {
+        text-align: left;
+    }
+
+    .contact{
+        max-width: 80%;
+        padding: 0%;
+    }
+
+    .flexdesktop{
+        display: block;
+    }
     .gallery .flexdesktop{
         display: block;
         width: fit-content;
