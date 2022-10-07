@@ -3,6 +3,7 @@
     margin: 0%;
 }
 
+
 input{
     outline: none;
     caret-color: inherit;
@@ -140,7 +141,7 @@ header button:hover{
 }
 
 .gallery .flexdesktop img{
-    max-width: 95%;
+    max-width: 30%;
     padding: 10px;
 }
 
@@ -169,26 +170,44 @@ header button:hover{
 /*------------------------------------------Contactme---*/
 
 .contact{
-    width: fit-content;
-    margin: auto;
-    margin-top: 10vh;
-    padding: 3% 10%;
-    text-align: center;
+    padding: 1% 1% ;
 }
+.contact .important img{
+    max-width: 35%;
+    height: fit-content;
+}
+.contact .flexdesktop{
+    justify-content: space-around;
+}
+
 .contact h2{
     font-size: 32px;
     font-weight: 700;
+    text-align: center;
 }
 
 .contact p{
-    margin:5px 3px 15px 3px ;
+    text-align: center;
+    margin: 5px 10% 25px 10%;
 }
-
 
 .contact .important{
-    text-align: left;
+    margin-left: 10%;
 }
 
+.contact button{
+    padding: 10px 26px;
+    text-align: center;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    outline: none;
+}
+
+.contact button:hover{
+    background-color: rgba(237, 237, 237, 0.7);
+    border-color: inherit;
+}
 .contact .important input{
     width: 400px;
     outline: none;
@@ -207,19 +226,18 @@ header button:hover{
     border-radius: 3px;
 }
 
-.contact button{
-    padding: 10px 26px;
-    text-align: center;
-    background-color: white;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    outline: none;
+
+
+
+.contact .important{
+    text-align: right;
 }
 
-.contact button:hover{
-    background-color: rgba(237, 237, 237, 0.7);
-    border-color: inherit;
+.contact .important div label{
+    text-align: left;
 }
+
+
 
 
 
@@ -255,11 +273,37 @@ footer{
 
 
 
+@media screen and (max-width:1000px){
 
 
 
+.contact{
+    padding-top: 10vh;
+}
+.hiddenmobile{
+    display: none;
+}
+
+.contact .important{
+    text-align: left;
+}
+.contact label{
+    display: block;
+    text-align: left;
+}
+.contact .important input{
+    margin-left: 0%;
+    width: 530px;
+    margin-bottom: 15px;
+}
 
 
+.contact .important textarea{
+    margin-left: 0%;
+    width: 530px;
+    margin-bottom: 15px;
+}
+}
 
 
 
@@ -269,8 +313,23 @@ footer{
 
 
 @media screen and (max-width:700px) {
+    .hiddenonmobile{
+        visibility: hidden;
+    }
+
+    .gallery .flexdesktop img{
+        max-width: 95%;
+        padding: 10px;
+    }
+    .contact{
+        padding-top: 10vh;
+    }
     .hiddenmobile{
         display: none;
+    }
+
+    .contact .important{
+        text-align: left;
     }
     .contact label{
         display: block;
@@ -287,15 +346,6 @@ footer{
         margin-left: 0%;
         width: 90%;
         margin-bottom: 15px;
-    }
-
-    .contact .important {
-        text-align: left;
-    }
-
-    .contact{
-        max-width: 80%;
-        padding: 0%;
     }
 
     .flexdesktop{
@@ -326,7 +376,8 @@ footer{
 
     header .profile{
         width: 85%;
-        margin-top: 10vh;
+        height: fit-content;
+        margin: auto;
         padding: 20px 20px;
     }
 
