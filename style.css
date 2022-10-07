@@ -239,6 +239,33 @@ header button:hover{
 
 
 
+/*-----------------------Clients-------------------*/
+
+
+.clients{
+    padding: 10vh 5%;
+}
+
+
+.clients h2{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.clients p{
+    text-align: center;
+    margin: 5px 10% 25px 10%;
+}
+.clients .flex{
+    justify-content: space-around;
+    align-items: center;
+}
+div.clients div.flex img{
+    width: 20%;
+    height: fit-content;
+}
+
 
 
 
@@ -313,6 +340,12 @@ footer{
 
 
 @media screen and (max-width:700px) {
+
+    div.clients div.flex img{
+        width: 27%;
+        height: fit-content;
+    }
+    
     .hiddenonmobile{
         visibility: hidden;
     }
