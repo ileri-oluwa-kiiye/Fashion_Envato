@@ -96,6 +96,18 @@ header button:hover{
 }
 
 
+header .socials{
+    margin-top: -50px;
+    position: relative;
+    left: 90%;
+    width: fit-content;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 15px;
+}
+
+header .socials img{
+    display: block;
+}
 
 /*------------------------------------Second Section-------*/
 
@@ -275,9 +287,14 @@ footer{
     text-align: center;
     width: fit-content;
     margin: auto;
-    margin-top: 1vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     font-size: 0.77em;
+}
+.socials img{
+    padding: 10px;
+    width: 17px;
+    height: fit-content;
 }
 
 
@@ -341,6 +358,9 @@ footer{
 
 @media screen and (max-width:700px) {
 
+    header .socials{
+        left: 80%;
+    }
     div.clients div.flex img{
         width: 27%;
         height: fit-content;
